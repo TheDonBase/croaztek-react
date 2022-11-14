@@ -16,6 +16,7 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
+import { StackedLineChartOutlined } from "@mui/icons-material";
 
 const Item = ({title, to, icon, selected, setSelected}) => {
     const theme = useTheme();
@@ -103,7 +104,84 @@ const Sidebar = () => {
                     )}
                     {/* MENU ITEMS */}
                     <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-                            
+                            <Item
+                            title="Dashboard"
+                            to="/"
+                            icon={<HomeOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Manage Team"
+                            to="team"
+                            icon={<PeopleOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Contacts Information"
+                            to="/contacts"
+                            icon={<ContactsOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Invoices Balances"
+                            to="/invoices"
+                            icon={<ReceiptOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Profile Form"
+                            to="/form"
+                            icon={<PersonOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Calandar"
+                            to="/calendar"
+                            icon={<CalendarTodayOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="FAQ Page"
+                            to="/faq"
+                            icon={<HelpOutlineOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Bar Chart"
+                            to="/Bar"
+                            icon={<BarChartOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Pie Chart"
+                            to="/Pie"
+                            icon={<PieChartOutlineOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Line Chart"
+                            to="/Line"
+                            icon={<StackedLineChartOutlined />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+                            <Item
+                            title="Geogrophy Chart"
+                            to="/geogrophy"
+                            icon={<MapOutlinedIcon />}
+                            selected={selected}
+                            setSelected={setSelected}
+                            />
+
                     </Box>
                 </Menu>
             </ProSidebar>
